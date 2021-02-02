@@ -1,0 +1,6 @@
+{
+	"url": "https://testcardboard.ininin.com/crm/account_center/login?queryFrom=query",
+	"method": "POST",
+	"headers": {"Accept": "application/json","Content-Type": "application/json;charset=UTF-8","Host": "testcardboard.ininin.com","Origin": "https://testdss.ininin.com","Referer": "https://testdss.ininin.com/","User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36","x-account-model": "2","X-CLIENT-VERSION": "b215a716","X-REQUEST-SOURCE": "PC","X-SYSTEM-FROM": "7"},
+	"body": {"userName":"13554724153","password":"14e1b600b1fd579f47433b88e8d85291"}
+}

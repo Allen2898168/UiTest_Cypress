@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-01-27T03:14:54.775Z",
+    "end": "2021-01-27T03:15:15.482Z",
+    "duration": 20707,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7ccba97a-6785-46be-86be-fbccdbd093b8",
+      "title": "",
+      "fullFile": "cypress\\TestCase\\dome.js",
+      "file": "cypress\\TestCase\\dome.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "69164bf3-066f-4ae3-8e8c-99128d077c6a",
+          "title": "登录后-访问首页",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "进入客户列表",
+              "fullTitle": "登录后-访问首页 进入客户列表",
+              "timedOut": null,
+              "duration": 20644,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".layout-menu-icon\").click();\ncy.get(\"[title=客户管理]\").click();\ncy.get(\"[title=客户列表]\").click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://testdss.ininin.com/#/incremental_board/index' to include '/1incremental_board/index'\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `登录后-访问首页`",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://testdss.ininin.com/#/incremental_board/index' to include '/1incremental_board/index'\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `登录后-访问首页`\n    at Context.eval (https://testdss.ininin.com/__cypress/tests?p=cypress\\support\\index.js:133:12)",
+                "diff": null
+              },
+              "uuid": "54c2d572-a9de-4e97-b772-4e4b4ffa31c6",
+              "parentUUID": "69164bf3-066f-4ae3-8e8c-99128d077c6a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "54c2d572-a9de-4e97-b772-4e4b4ffa31c6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20644,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

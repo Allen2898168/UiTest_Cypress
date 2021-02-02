@@ -1,0 +1,12 @@
+{
+  "baseUrl": "https://testdss.ininin.com/",
+  "integrationFolder": "cypress/TestCase",
+  "testFiles": "**/*.js",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true
+  },
+  "retries": 2
+}
