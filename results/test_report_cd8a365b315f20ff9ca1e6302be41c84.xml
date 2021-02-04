@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="6.7320" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2021-01-26T08:21:09" tests="0" file="cypress\TestCase\dome.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="登录后-访问首页" timestamp="2021-01-26T08:21:09" tests="1" time="6.7320" failures="0">
-    <testcase name="登录后-访问首页 进入客户列表" time="6.7320" classname="进入客户列表">
-    </testcase>
-  </testsuite>
-</testsuites>

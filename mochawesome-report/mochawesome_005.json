@@ -1,0 +1,128 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-02-04T02:40:33.885Z",
+    "end": "2021-02-04T02:41:23.199Z",
+    "duration": 49314,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "df82576f-0ea2-4925-9e23-0dfd664705bb",
+      "title": "",
+      "fullFile": "cypress\\TestCase\\test1.js",
+      "file": "cypress\\TestCase\\test1.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "08dde9a8-8900-4c87-a173-d630597a500a",
+          "title": "测试项目",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "进入客户列表",
+              "fullTitle": "测试项目 进入客户列表",
+              "timedOut": null,
+              "duration": 1027,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[placeholder=\"搜索客户/销售/订单号\"]').type('客户');\ncy.get(\".layout-menu-icon\").click();\ncy.get(\"[title=客户管理]\").click();\ncy.get(\"[title=客户列表]\").click();",
+              "err": {},
+              "uuid": "556595d3-dc1b-4a30-ab25-ad46e2febceb",
+              "parentUUID": "08dde9a8-8900-4c87-a173-d630597a500a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "销售管理",
+              "fullTitle": "测试项目 销售管理",
+              "timedOut": null,
+              "duration": 4548,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(5) > .el-submenu > .el-submenu__title').click();\ncy.get('[title=经营报表]').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(5) > .el-submenu > .el-submenu__title`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(5) > .el-submenu > .el-submenu__title`, but never found it.\n    at Context.eval (https://testdss.ininin.com/__cypress/tests?p=cypress\\TestCase\\test1.js:131:8)",
+                "diff": null
+              },
+              "uuid": "a6fdeae4-0b55-4f76-b533-abf8dff866b7",
+              "parentUUID": "08dde9a8-8900-4c87-a173-d630597a500a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "556595d3-dc1b-4a30-ab25-ad46e2febceb"
+          ],
+          "failures": [
+            "a6fdeae4-0b55-4f76-b533-abf8dff866b7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5575,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -23,7 +23,6 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
-import './login'
 Cypress.Commands.add('login_request', (url, method, headers, body) => {
 
     cy.request({url: url, method: method, headers: headers, body: body})

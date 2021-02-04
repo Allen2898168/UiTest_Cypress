@@ -1,7 +1,4 @@
 describe('测试项目', function () {
-    var LoginUrl
-    var LoginMethod
-    var LoginHeaders
     var LoginBody
     var LoginName
     var LoginPassWord
@@ -29,7 +26,7 @@ describe('测试项目', function () {
 
     });
     it('进入客户列表', function () {
-        cy.log("2222")
+        cy.get('[placeholder="搜索客户/销售/订单号"]').type('客户')
         cy.get(".layout-menu-icon").click()
         cy.get("[title=客户管理]").click()
         cy.get("[title=客户列表]").click()

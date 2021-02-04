@@ -1,0 +1,89 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-02-04T02:41:35.566Z",
+    "end": "2021-02-04T02:41:37.079Z",
+    "duration": 1513,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5d29c392-9e48-4efd-aa6f-05e2d7b18176",
+      "title": "",
+      "fullFile": "cypress\\TestCase\\test2.js",
+      "file": "cypress\\TestCase\\test2.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 461,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "throw err;",
+          "err": {
+            "message": "CypressError: The following error originated from your test code, not from Cypress.\n\n  > Cannot call `cy.log()` outside a running test.\n\nThis usually happens when you accidentally write commands outside an `it(...)` test.\n\nIf that is the case, just move these commands inside an `it(...)` test.\n\nCheck your test file for errors.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n\nhttps://on.cypress.io/cannot-execute-commands-outside-test",
+            "estack": "CypressError: The following error originated from your test code, not from Cypress.\n\n  > Cannot call `cy.log()` outside a running test.\n\nThis usually happens when you accidentally write commands outside an `it(...)` test.\n\nIf that is the case, just move these commands inside an `it(...)` test.\n\nCheck your test file for errors.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n\nhttps://on.cypress.io/cannot-execute-commands-outside-test\n    at Object.ensureRunnable (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:161221:24)\n    at $Cy.cy.<computed> [as log] (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:170236:17)\n    at Object.create (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:99763:19)\n    at context.describe.context.context (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:99539:27)\n    at https://testdss.ininin.com/__cypress/runner/cypress_runner.js:174173:21\n    at https://testdss.ininin.com/__cypress/runner/cypress_runner.js:176695:16\n    at arrayEach (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:25282:11)\n    at Function.forEach (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:34134:14)\n    at evalScripts (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:176694:5)\n    at https://testdss.ininin.com/__cypress/runner/cypress_runner.js:176702:113\n    at tryCatcher (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:10609:23)\n    at Promise._settlePromiseFromHandler (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:8544:31)\n    at Promise._settlePromise (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:8601:18)\n    at Promise._settlePromise0 (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:8646:10)\n    at Promise._settlePromises (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:8726:18)\n    at Promise._fulfill (https://testdss.ininin.com/__cypress/runner/cypress_runner.js:8670:18)",
+            "diff": null
+          },
+          "uuid": "3a29647e-289e-43d8-8ed2-9aaa02455a47",
+          "parentUUID": "5d29c392-9e48-4efd-aa6f-05e2d7b18176",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "3a29647e-289e-43d8-8ed2-9aaa02455a47"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 461,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

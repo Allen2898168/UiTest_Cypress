@@ -8,6 +8,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:report": "node scripts/cypress.js",
+    "cypress:chrome": "cypress run --browser chrome",
     "retryCases":"CYPRESS_RETRIES=2 cypress run"
   },
   "repository": {
